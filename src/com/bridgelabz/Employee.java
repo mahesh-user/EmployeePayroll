@@ -18,24 +18,33 @@ public class Employee {
     public void salary() {
         Random name = new Random();
         int check = name.nextInt(3);
-        int WagePerHour = 20;
-        int FullDayHour = 8;
-        int PartTime = 4;
-        int TotalWage;
-        if (check == 1) {
-            System.out.println(" employee is present");
-            TotalWage = WagePerHour * FullDayHour;
-            System.out.println("employee wage is " + TotalWage);
-        } else if (check == 2) {
-            System.out.println("employee is parttime");
-            TotalWage = WagePerHour * PartTime;
-            System.out.println(" employee wage is " + TotalWage);
-        } else {
-            System.out.println("employee is absent");
-            TotalWage = 0;
-            System.out.println("employee wage is " + TotalWage);
+         final int Present=1;
+         final int Absent=0;
+         final int Fulltime=8;
+         final int Parttime=4;
+         final int WagePerHour=20;
+         int DailyWage=0;
+
+            switch (check) {
+                case Present: {
+                    System.out.println("Employee is present");
+                    DailyWage = Fulltime * WagePerHour;
+                    break;
+
+                }
+                case Absent: {
+                    System.out.println("Employee is Absent");
+                    break;
+                }
+                default: {
+                    System.out.println("Employee is part time ");
+                    DailyWage = Parttime * WagePerHour;
+                    break;
+                }
+            }
+            System.out.println("Daily wage : " +DailyWage);
         }
 
     }
-    }
+
 
