@@ -23,8 +23,9 @@ public class Employee {
          final int Fulltime=8;
          final int Parttime=4;
          final int WagePerHour=20;
+         final int NoOfWorkingDays = 20;
          int DailyWage=0;
-
+        int monthlyWage = 0;
             switch (check) {
                 case Present: {
                     System.out.println("Employee is present");
@@ -42,7 +43,9 @@ public class Employee {
                     break;
                 }
             }
-            System.out.println("Daily wage : " +DailyWage);
+        monthlyWage=DailyWage*NoOfWorkingDays;
+            System.out.println("Daily wage : " + DailyWage);
+        System.out.println("Monthly wage : " + monthlyWage );
         }
 
     }
