@@ -17,7 +17,7 @@ public class Employee {
     }
     public void salary() {
         Random name = new Random();
-        int check = name.nextInt(2);
+        int check = name.nextInt(3);
         int WagePerHour = 20;
         int FullDayHour = 8;
         int PartTime = 4;
@@ -26,14 +26,16 @@ public class Employee {
             System.out.println(" employee is present");
             TotalWage = WagePerHour * FullDayHour;
             System.out.println("employee wage is " + TotalWage);
-        }
-         else {
+        } else if (check == 2) {
+            System.out.println("employee is parttime");
+            TotalWage = WagePerHour * PartTime;
+            System.out.println(" employee wage is " + TotalWage);
+        } else {
             System.out.println("employee is absent");
             TotalWage = 0;
             System.out.println("employee wage is " + TotalWage);
         }
 
-
     }
-}
+    }
 
