@@ -16,36 +16,36 @@ public class Employee {
         }
     }
 
-    public void salary() {
+    public static void multiplecompanies(int WagePerHour, int NoOfWorkingDays, int TotalHours, String companyName) {
         Random name = new Random();
         int check = name.nextInt(3);
         final int Present = 1;
         final int Absent = 0;
-        final int FULLTIME = 8;
-        final int PARTTIME  = 4;
-        final int WagePerHour = 20;
-        final int NoOfWorkingDays = 20;
+        final int Fulltime = 8;
+        final int Parttime = 4;
+
+
         int DailyWage = 0;
         int MonthlyWage = 0;
-        int TotalHours = 0;
+
         int Hours = 0;
-        if (NoOfWorkingDays < 100 && TotalHours < 100) {
+        while (TotalHours <= 100 && NoOfWorkingDays <= 20) {
             switch (check) {
-                case Present: {
+               case Present: {
                     System.out.println("Employee is present");
-                    DailyWage = FULLTIME * WagePerHour;
-                    Hours = FULLTIME;
+                    DailyWage = Fulltime * WagePerHour;
+                    Hours = Fulltime;
                     break;
 
                 }
                 case Absent: {
-                    System.out.println("Employee is Absent");
+//                    System.out.println("Employee is Absent");
                     break;
                 }
                 default: {
-                    System.out.println("Employee is part time ");
-                    DailyWage = PARTTIME  * WagePerHour;
-                    Hours = PARTTIME ;
+                   System.out.println("Employee is part time ");
+                    DailyWage = Parttime * WagePerHour;
+                    Hours = Parttime;
                     break;
                 }
 
@@ -55,8 +55,17 @@ public class Employee {
 
         }
         MonthlyWage = DailyWage * NoOfWorkingDays;
-        System.out.println("Daily wage : " + DailyWage);
-        System.out.println("Monthly wage : " + MonthlyWage);
+        System.out.println("company name : " + companyName + "  DailyWage:  " + DailyWage + "  monthlywage:  " + MonthlyWage + " totalhours  " + TotalHours);
 
     }
+
 }
+
+
+
+
+
+
+
+
+
