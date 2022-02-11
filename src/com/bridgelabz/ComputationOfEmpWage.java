@@ -3,6 +3,7 @@ package com.bridgelabz;
 import java.util.Random;
 
 public class ComputationOfEmpWage {
+    //variables
 
     String companyName;
     int numOfWorkingDays,isFullTime,isPartTime,wagePerHour,totalEmpWage;
