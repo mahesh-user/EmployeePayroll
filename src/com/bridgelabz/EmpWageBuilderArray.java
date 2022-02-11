@@ -5,10 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
-/**
- * using arraylist to store the company details
- * using hashmap to store the company name as key and company details as values
- */
 public class EmpWageBuilderArray implements EmpWage {
     ArrayList<ComputationOfEmpWage> companyDetailsList = new ArrayList<>();
     Map<String,ComputationOfEmpWage> map = new HashMap<>();
@@ -19,9 +15,7 @@ public class EmpWageBuilderArray implements EmpWage {
         map.put(company,computationOfEmpWage);
     }
 
-    /**
-     * this method is to calculate Employee wage for multiple companies
-     */
+
     public void computeEmpWage(){
 
         for (int i=0;i<companyDetailsList.size();i++){
@@ -30,11 +24,6 @@ public class EmpWageBuilderArray implements EmpWage {
         }
     }
 
-    /**
-     * To calculate the employee wage
-     * @param computationOfEmpWage
-     * @return
-     */
     public int empMonthlyWage(ComputationOfEmpWage computationOfEmpWage) {
         final int IS_PRESENT = 1;
         final int IS_ABSENT = 0;

@@ -3,11 +3,11 @@ package com.bridgelabz;
 import java.util.Random;
 
 public class ComputationOfEmpWage {
-    //Class level variables
+
 
     String companyName;
     int numOfWorkingDays,isFullTime,isPartTime,wagePerHour,totalEmpWage;
-    //parameterised constructor to initialize
+
     public ComputationOfEmpWage(String companyName, int numOfWorkingDays, int isFullTime, int isPartTime, int wagePerHour){
         this.companyName = companyName;
         this.numOfWorkingDays = numOfWorkingDays;
