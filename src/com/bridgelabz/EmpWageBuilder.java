@@ -7,6 +7,8 @@ public class EmpWageBuilder {
         empWageBuilderArray.addCompanyDetails("Dmart",30,8,4,30);
         empWageBuilderArray.addCompanyDetails("Bigbazaar",20,8,4,25);
         empWageBuilderArray.computeEmpWage();
+        System.out.println("Total Wage of company : " + empWageBuilderArray.getTotalEmpWage("reliance"));
     }
-
 }
+
+
