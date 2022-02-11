@@ -15,7 +15,6 @@ public class ComputationOfEmpWage {
         this.isPartTime = isPartTime;
         this.wagePerHour = wagePerHour;
     }
-
 }
 
 
